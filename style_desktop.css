@@ -1,0 +1,251 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+/* common settings */
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+    /* border: 1px solid #000; */
+}
+
+a{
+    text-decoration: none !important;
+    color: var(--gray) !important;
+}
+
+.m-0{
+    margin: 0 !important;
+}
+
+/* colors */
+:root{
+    --purple: #630834;
+    --pink: #E31277;
+    --darkPurple: #190014CC;
+    --gray: #707070;
+}
+
+/* utilities */
+.title-1{
+    font: Noto Sans CJK TC; 
+    font-size: 32px;
+    line-height: 48px; 
+}
+
+.title-2{
+    font: Roboto;
+    font-size: 20px;
+    line-height: 30px;
+}
+.title-3{
+    font: Noto Sans CJK TC;
+    font-size: 20px;
+    line-height: 30px;
+}
+.title-white{
+    color: #fff;
+}
+.title-black{
+    color: #000;
+}
+
+/* .title-2{
+
+} */
+.btn{
+    border-radius: 5px;
+    border: 0;
+}
+.btn-pink{
+    background-color: var(--pink);
+    color: #fff;
+}
+.btn-pink:hover{
+    border: var(--pink) 1px solid;
+}
+.btn-pink-trans{
+    color: #fff;
+    border: #fff 1px solid;
+}
+.btn-pink-trans:hover{
+    background-color: #fff;
+    color: #000;
+}
+.btn-purple{
+    background-color: var(--purple);
+    color: #fff;
+}
+.btn-purple:hover{
+    border: var(--purple) 1px solid;
+}
+.btn-purple-trans{
+    color: var(--purple);
+    border: var(--purple) 1px solid;
+}
+.btn-purple-trans:hover{
+    color: #fff;
+    background-color: var(--purple);
+}
+
+.btn-lg{
+    padding: 10px 48px;
+}
+.btn-me{
+    padding: 12px 52px;
+}
+.btn-sm{
+    padding: 10px 16px;
+}
+
+.btn-sub{
+    background-color: #fff;
+    border: 0;
+    padding: 12px;
+    max-width: 350px;
+}
+/* header */
+header{
+    padding: 10px;
+    color: var(--gray) !important;
+}
+
+.logo{
+    font: Arial Hebrew bold 24px;
+    color: purple;
+}
+
+.header-menu{
+    margin-bottom: 0;
+}
+
+.header-menu li{
+    font: Roboto;
+    margin-left: 32px;
+}
+
+header img{
+    max-width: 24px;
+}
+
+/* banner */
+.banner{
+    background-image: url(/img/ricardo-gomez-angel-UrOZTfXT0h0-unsplash\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.banner-content{
+    color: #fff;
+    margin-left: 180px;
+}
+/* nav */
+nav{
+    border: 1px solid var(--gray);
+}
+.nav-menu li{
+    margin: 14px 9px;
+}
+/* main */
+main{
+    padding: 60px 0;
+}
+/* show */
+.show li{
+    background: #EFEFEF;
+    margin-bottom: 20px;
+}
+.show-content{
+    width: 100%;
+    padding: 40px 24px;
+}
+.show-img{
+    max-width: 350px;
+}
+.show-text{
+    max-width: 540px;
+}
+.show-time{
+    display: flex;
+    align-items: center;
+    width: 39px;
+}
+.show-intro{
+    margin-bottom: 34px;
+    font: normal normal medium 20px/30px Roboto;
+}
+.show-time{
+    font: normal normal bold 20px/30px Roboto;
+}
+
+/* footer */
+footer{
+    height: 400px;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+}
+.logo-black{
+        font: Arial Hebrew bold 24px;
+        color: #000;
+    
+}
