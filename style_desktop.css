@@ -215,7 +215,7 @@ main{
     margin-bottom: 20px;
 }
 .show-content{
-    width: 100%;
+    max-width: 100%;
     padding: 40px 24px;
 }
 .show-img{
