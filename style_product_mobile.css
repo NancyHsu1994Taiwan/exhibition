@@ -1,0 +1,32 @@
+@media(max-width: 375px){
+	header{
+		padding: 21px 0;
+	}
+	/* .row .col-4:nth-child(1){
+		display: none;
+	} */
+	.title-logo{
+		font: normal normal normal 22px/23px Arial Hebrew Scholar;
+	}
+	header .nav-menu,.footer-nav .nav-menu{
+		display: none !important;
+	}
+	nav{
+		display: none !important;
+	}
+	.show{
+		padding: 44px 0;
+	}
+	.title-time{
+		width: 100%;
+	}
+	.show-intro{
+		margin-bottom: 16px;
+	}
+	.title-3{
+		font: normal normal bold 24px/36px Noto Sans CJK TC;
+	}
+	.footer-nav .footer-nav-content{
+		display: block !important;
+	}
+}

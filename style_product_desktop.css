@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* common settings */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+a{
+	text-decoration: none !important;
+	color: var(--gray) !important;
+}
+
+.color-pl{
+	color: var(--purple);
+}
+
+.color-wh{
+	color: #fff;
+}
+.color-bl{
+	color: #000;
+}
+
+.title-logo{
+	font: normal normal normal 24px/24px Arial Hebrew Scholar;
+}
+.title-1{
+	font: normal normal bold 36px/54px Noto Sans CJK TC;
+}
+
+.title-time{
+	font: normal normal bold 20px/30px Roboto;
+	width: 8.33%;
+}
+.title-2{
+	font: normal normal bold 32px/48px Noto Sans CJK TC;
+}
+.title-reco{
+	font: normal normal bold 20px/30px Noto Sans CJK TC;
+}
+.title-3{
+	font: normal normal bold 32px/48px Noto Sans CJK TC;
+}
+
+/* color */
+:root{
+	--purple: #630834;
+	--gray: #707070;
+}
+
+/* spacing */
+/* .mx-2{
+	margin: 0 16px;
+} */
+
+.mb-3{
+	margin-bottom: 24px;
+}
+
+
+/* header */
+header{
+	padding: 28px 0;
+}
+.ticket{
+	max-width: 24px;
+}
+
+
+/* nav */
+nav{
+	border-top: 1px var(--gray) solid;
+}
+.nav-menu{
+	padding: 14px 0;
+}
+.nav-menu li{
+	margin: 0 18px;
+}
+.nav-menu li a{
+	padding: 14px 9px;
+}
+.nav-menu li a{
+	font: normal normal normal 16px/24px Noto Sans CJK TC;
+	color: var(--gray) !important;
+}
+.nav-menu li:hover{
+	border-bottom: #E31277 solid 1px;
+}
+
+/* main */
+.show{
+	padding: 80px 0 52px 0;
+}
+.show-pl{
+	background-color: var(--purple);
+}
+.show-wh{
+	background-color: #fff;
+}
+
+.show-intro{
+	font: normal normal medium 16px/24px Roboto;
+}
+.show-img{
+	max-width: 100%;
+}
+.recommand{
+	padding: 60px 0;
+}
+.recommand-img{
+	height: 350px;
+}
+.img-reco{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 350px;
+}
+.img-reco-1{
+	background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg);
+}
+.img-reco-2{
+	background-image:url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg);
+}
+.img-reco-3{
+	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg");
+}
+.price{
+	font: normal normal normal 20px/30px Roboto;
+}
+
+/* footer */
+footer{
+	background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
+	height: 400px;
+	background-size: cover;
+	background-position: cover;
+	padding-bottom: 36px;
+}
+.footer-nav{
+	padding: 28px 0;
+}
